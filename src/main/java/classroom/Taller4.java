@@ -1,8 +1,13 @@
 package classroom;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
 public class Taller4 {
 
     public static void main(String[] args) {
+    	
+    	
         Persona[] estudiantes1 = new Persona[3];
         estudiantes1[0] = new Persona(188220);
         estudiantes1[1] = new Persona();
@@ -25,7 +30,9 @@ public class Taller4 {
         System.out.println(asignatura2.codigoExterno);
         asignatura1.cambiarDatos(50);
         System.out.println(asignatura1.codigoExterno);
-        System.out.println(estudiantes1[1].cedula);
-        System.out.println(new Persona("Alejandro").cedula);
+        System.out.println(estudiantes1[1].getCedula());
+        System.out.println(new Persona("Alejandro").getCedula());
+        
+        
     }
 }
